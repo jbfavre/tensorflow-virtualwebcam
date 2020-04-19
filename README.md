@@ -45,6 +45,7 @@ It's the device the Python script will read the video stream from.
 
 ## TODO
 
+- build Tensorflow with AVX2 and FMA CPU's instructions
 - use docker params to pass background image name and resolution
 - expose an basic API to:
   - change background image "on the fly"
