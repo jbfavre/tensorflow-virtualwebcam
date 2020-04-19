@@ -1,0 +1,27 @@
+version: '3.8'
+services:
+  bodypix:
+    build:
+      context: ./bodypix
+      dockerfile: Dockerfile
+    networks:
+      - fakecam
+    shm_size: 1g
+    ulimits:
+      memlock: 1
+      stack: 67108864
+  fakecam:
+    build:
+      context: ./fakecam
+      dockerfile: Dockerfile
+    networks:
+      - fakecam
+    depends_on:
+      - "bodypix"
+    devices:
+      - "/dev/video0:/dev/video0"
+      - "/dev/video20:/dev/video20"
+    user: "1000:44"
+    
+networks:
+  fakecam:
