@@ -33,8 +33,9 @@ Edit `docker-compose.yaml`, change line 22, save and run:
 
      docker-compose up --detach --build fakecam
 
-Please note the second part of the string "/dev/videoX:/dev/video0" should **always** be `/dev/video0`.
-It's the device from which the Python will read the video stream.
+Please note the second part of the string "/dev/videoX:/dev/video0" should **always** be `/dev/video0`.  
+
+It's the device the Python script will read the video stream from.
 
 ## Why
 
