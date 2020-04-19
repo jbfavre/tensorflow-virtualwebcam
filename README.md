@@ -15,17 +15,17 @@ If you only have CPU like me (better have a quite recent and decent one, by the 
 
     docker-compose up --build
 
-### Update
+### Stop
+
+    docker-compose down
+
+### Change webcam resolution
 
 To change resolution, edit `fakecam/fake.py`, change line 79, save, and run:
 
     docker-compose up fakecam --build
 
 Please note you first should close the software reading the fake webcam.
-
-### Stop
-
-    docker-compose down
 
 ### Read a different webcam
 
