@@ -1,6 +1,7 @@
 # Custom video background incrustation
 
 Heavily based on https://elder.dev/posts/open-source-virtual-background/ from @BenTheElder
+
 Thanks for your post !
 
 ## Usage
