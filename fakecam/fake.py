@@ -71,12 +71,11 @@ cap = cv2.VideoCapture('/dev/video0')
 # Pick up one of:
 #    240p = 352 x 240
 #    360 p = 480 x 360
-#    480p = 858 x 480 — also known as SD
-#    720p = 1280 x 720 — the old TVs of this resolution were marked HDready
-#    1080p = 1920 x 1080 — FullHD
-#    2160p = 3860 x 2160 —Ultra-HD, also known as 4K (that’s a marketing trick)
+#    480p = 858 x 480
+#    720p = 1280 x 720
+#    1080p = 1920 x 1080
+#    2160p = 3860 x 2160
 # /!\ depends on what your webcam supports /!\
-width, height = 640, 480
 width, height = 1280, 720
 cap.set(cv2.CAP_PROP_FRAME_WIDTH, width)
 cap.set(cv2.CAP_PROP_FRAME_HEIGHT, height)
