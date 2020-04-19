@@ -59,7 +59,7 @@ def get_frame(cap, background_scaled):
             print("mask request failed, retrying")
     # post-process mask and frame
     mask = post_process_mask(mask)
-    # frame = hologram_effect(frame)
+    frame = hologram_effect(frame)
     # composite the foreground and background
     inv_mask = 1-mask
     for c in range(frame.shape[2]):
