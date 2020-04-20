@@ -4,6 +4,20 @@ Heavily based on https://elder.dev/posts/open-source-virtual-background/ from @B
 
 Thanks for your post !
 
+## Setup the loopback webcam
+
+Install kernel module
+
+    sudo apt install v4l2loopback-dkms
+
+Unload it (automatically loaded during install)
+
+    sudo modprobe -r v4l2loopback
+
+Load it with relevant options
+
+    sudo modprobe v4l2loopback devices=1 video_nr=20 card_label="v4l2loopback" exclusive_caps=1
+
 ## Usage
 
 If you have a Nvidia GPU, don't bother using my code.
